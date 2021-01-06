@@ -6,40 +6,99 @@
     <title>Document</title>
 </head>
 <body>
-    <style>* {
-        box-sizing: border-box;
-      }
+    <style>
+      *{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family:arial,sans-serif;
+  font-size:100%;
+  margin:1em;
+  background:rgb(240, 78, 100);
+  color:#fff;
+}
+h2,p{
+  font-size:100%;
+  font-weight:normal;
+}
+ul,li{
+  list-style:none;
+}
+ul{
+  overflow:hidden;
+  padding:3em;
+}
+ul li a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+ul li{
+  margin:1em;
+  float:left;
+}
+ul li h2{
+  font-size:140%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+ul li p{
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size:180%;
+}
+ul li a{
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+ul li:nth-child(even) a{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+ul li:nth-child(3n) a{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+ul li:nth-child(5n) a{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+ul li a:hover,ul li a:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+ol{text-align:center;}
+ol li{display:inline;padding-right:1em;}
+ol li a{color:#fff;}
       
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      
-      /* Float four columns side by side */
-      .column {
-        float: left;
-        width: 25%;
-        padding: 0 10px;
-      }
-      
-      /* Remove extra left and right margins, due to padding in columns */
-      .row {margin: 0 -5px;}
-      
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-      
-      /* Style the counter cards */
-      .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-        padding: 16px;
-        text-align: center;
-        background-color: #f1f1f1;
-        margin: 10px;
-        height: 250px;
-      }
       
       /* Responsive columns - one column layout (vertical) on small screens */
       @media screen and (max-width: 600px) {
@@ -48,33 +107,119 @@
           display: block;
           margin-bottom: 20px;
         }
-      } </style>
+      }
+       </style>
 <h2> Welcome to the Editorial Section</h2>
 <div class="row">
-    <div class="column">
-      <div class="card">..</div>
-    </div>
-    <div class="column">
-      <div class="card">..</div>
-    </div>
-    <div class="column">
-      <div class="card">..</div>
-    </div>
-    <div class="column">
-      <div class="card">..</div>
-    </div>
-    <div class="column">
-        <div class="card">..</div>
-      </div>
-      <div class="column">
-        <div class="card">..</div>
-      </div>
-      <div class="column">
-        <div class="card">..</div>
-      </div>
-      <div class="column">
-        <div class="card">..</div>
-      </div>
+  <ul>
+    <li>
+      <a href="https://www.thehindu.com/news/national/what-are-the-laws-on-rape-and-sexual-crimes/article30233033.ece">
+        <h2>Rape Laws Updated #1</h2>
+        <p>humko sirf tumse pyaar hai</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Title #2</h2>
+        <p>Text Content #2</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Title #3</h2>
+        <p>Text Content #3</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Title #4</h2>
+        <p>Text Content #4</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Title #5</h2>
+        <p>Text Content #5</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Title #6</h2>
+        <p>Text Content #6</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Title #2</h2>
+        <p>Text Content #2</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Title #7</h2>
+        <p>Text Content #7</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Title #8</h2>
+        <p>Text Content #8</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Title #9</h2>
+        <p>Text Content #9</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Title #10</h2>
+        <p>Text Content #10</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Title #11</h2>
+        <p>Text Content #11</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Title #12</h2>
+        <p>Text Content #12</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Title #13</h2>
+        <p>Text Content #13</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Title #14</h2>
+        <p>Text Content #14</p>
+      </a>
+      <li>
+        <a href="#">
+          <h2>Title #15</h2>
+          <p>Text Content #15</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <h2>Title #16</h2>
+          <p>Text Content #16</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <h2>Title #17</h2>
+          <p>Text Content #17</p>
+        </a>
+    </li>
+  </ul>
   </div>
   
 

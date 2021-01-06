@@ -1,9 +1,3 @@
-
-
-
-
-
-
 let take = document.getElementById('typewritercontent');
 
 let typewriter = new Typewriter(take, {
