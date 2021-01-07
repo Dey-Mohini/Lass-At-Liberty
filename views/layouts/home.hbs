@@ -20,7 +20,8 @@
     body {
       font-family: 'Ubuntu', sans-serif;
       
-      background-image: url("https://media.istockphoto.com/vectors/pink-floral-vector-background-vector-id483632164?k=6&m=483632164&s=612x612&w=0&h=XQXVwtCphNCWmzG57dV7Mj8b_71kZbyyfO9lWk1sz-c=");
+      background-color:#FFEDE1;
+    
       
       background-size: cover;
       background-attachment: fixed;
@@ -30,7 +31,7 @@
     #navbar {
       border: 3px solid black;
       padding: 5px;
-      background-image: url("https://media.istockphoto.com/vectors/abstract-pink-geometric-background-vector-id686546952?k=6&m=686546952&s=612x612&w=0&h=1B4E6iY-cAoVFm7Ky_GC6vlHbzlq69Q8r2vcBF3NmFs=tps://media.istockphoto.com/photos/decorative-pink-magenta-color-background-picture-id1130115025?k=6&m=1130115025&s=170667a&w=0&h=5pnR-2yIj1LHBQOmY8L4dQdgJAs1XnBXKw3KOAgzaLA=");
+      {{!-- background-image: url("https://media.gettyimages.com/videos/4k-abstract-bokeh-background-loop-video-id812718952?s=640x640"); --}}
       border-radius: 80px;
     }
 
@@ -223,6 +224,13 @@
       border-color: transparent;
       border: 2px solid rgb(241, 190, 190);
     }
+    #gif{
+      float: right;
+      margin-top: -100px;
+     position: relative;
+     
+
+    }
 
     #ticks {
       position: relative;
@@ -262,6 +270,30 @@
       top: -0.8em;
       margin: 0 0 0 0.5em;
     }
+    
+    .footer{
+  background-color: rgb(14, 13, 13);
+  color: rgb(243, 231, 231);
+  text-align: center;
+  font-weight: var(--font-semi);
+  padding: 2rem 0;
+}
+.footer__title{
+  font-size: 2rem;
+  margin-bottom: var(--mb-4);
+}
+.footer__social{
+  margin-bottom: var(--mb-4);
+}
+.footer__icon{
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 var(--mb-2)
+}
+
+
+
+
   </style>
   <header>
     <nav id="navbar">
@@ -279,6 +311,10 @@
   <div id="logo">
     <img id="pic" src="/image/finallogo.png">
     <p id="typewritercontent"></p>
+    <div id="gif">
+      <img src="https://i.pinimg.com/originals/c3/50/48/c350488c70a43f07404b43d4bea7d92c.gif">
+
+    </div>
 
   </div>
   <div>
@@ -326,36 +362,35 @@
         </tr>
       </tbody>
     </table>
+    <div class="holder">
+  
 
 
   </div>
-  <div>
-    <marquee behavior="scroll" direction="left">headlines... </marquee>
-  </div>
-  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  <script type="text/javascript">
-
-    let take = document.getElementById('typewritercontent');
-
-    let typewriter = new Typewriter(take, {
-      loop: true,
-      delay: 75,
-    });
-    let arr = ['Bold', 'Brave', 'Independent', 'HeadStrong'];
-    for (let i = 0; i < arr.length; i++) {
-      let s = arr[i];
-      s.toString();
-
-      typewriter
-        .pauseFor(800)
-        .typeString(s)
-        .pauseFor(2500)
-        .deleteChars(15)
-        .pauseFor(800)
-        .start();
-
-    }
-  </script>
+  
+  <footer class="footer">
+        <p class="footer__title">CONTACT US</p>
+        <div id="contacts-content">
+          <div id="fcbk">
+            <a href="https://www.facebook.com/lass.atliberty/" target="_blank"
+              >Facebook<i class="bx bxl-facebook-square"></i
+            ></a>
+          </div>
+          
+          <div id="email">
+            <a href="mailto:dey.mohini1129@gmail.com" target="_blank"
+              >Mail<i class="bx bx-mail-send"></i
+            ></a>
+          </div>
+          
+          <div id="insta">
+            <a href="https://www.instagram.com/lass_at_liberty/" target="_blank"
+              >Follow me<i class="bx bxl-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <p>&#169; 2021</p>
+      </footer>
 </body>
 
 </html>
