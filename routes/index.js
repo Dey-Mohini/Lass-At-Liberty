@@ -14,6 +14,11 @@ router.get('/home', ensureAuth, (req, res) => {
      layout: 'homelogin',
   })
 })
+router.get('/editorial', ensureAuth, (req, res) => {
+  res.render('../views/layouts/editorial', {
+     layout: 'editorial',
+  })
+})
 router.get('/login', ensureGuest, (req, res) => {
   res.render('login', {
     layout: 'login',
