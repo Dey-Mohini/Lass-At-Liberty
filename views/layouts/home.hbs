@@ -30,13 +30,13 @@
     #navbar {
       border: 3px solid black;
       padding: 5px;
-      {{!-- background-image: url("https://media.gettyimages.com/videos/4k-abstract-bokeh-background-loop-video-id812718952?s=640x640"); --}}
+      background-color: black;
       border-radius: 80px;
     }
 
     #navbar a {
       text-decoration: none;
-      color: #043042;
+      color: #afe3f8;
       padding-top: 35px;
       padding: 10px;
     }
@@ -225,7 +225,7 @@
     }
     #gif{
       float: right;
-      margin-top: -100px;
+      margin-top: -65px;
      position: relative;
      
 
@@ -271,12 +271,12 @@
     }
     
     .footer{
-  background-color: rgb(61,4,4);
-    color: rgb(243, 231, 231);
+   background: linear-gradient(45deg, #84d7fd, rgb(236, 238, 106));
+    color: rgb(12, 11, 11);
     text-align: center;
     padding: 0px;
     font-weight: var(--font-semi);
-    border: 5px solid #a1a707;
+    border: 5px solid #0d0e0d;
 }
 .footer__title{
   font-size: 2rem;
@@ -304,18 +304,24 @@
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: xx-large;
+      border: solid 3px black
 }
 /* Google */
 #email .fa-google {
   background: #dd4b39;
   color: white;
   font-size: xx-large;
+      border: solid 3px black
 }
 /* Instagram */
 #insta .fa-instagram {
       background: linear-gradient(45deg, #f86f0d, rgb(55,25,220));
   color: white;
   font-size: xx-large;
+      border: solid 3px black
+}
+#blue{
+  color: rgb(13, 189, 243);
 }
 
 
@@ -325,9 +331,9 @@
   </style>
   <header>
     <nav id="navbar">
-      <a href="/" id="home"><strong>Lass At Liberty</strong> <img id="navimg" src="/image/Icon-navbar.png"> </a>
+      <a href="/" id="home"><strong>Lass At Liberty</strong> <img id="navimg" src="/image/lalnavfin.jpg"> </a>
       <span id="right-shift">
-        <a href="#editorial" class="nav-links">Editorial</a>
+        {{!-- <a href="/editorial" class="nav-links">Editorial</a> --}}
         <a href="/login" class="nav-links">Login</a>
         <a href="https://www.youtube.com/playlist?list=PLc5dVGJbyCs2luU-uV1NwNpa8AxwKDEqt" target="#"
           class="nav-links">Videos</a>
@@ -345,7 +351,10 @@
     </div>
   </div>
     <table id="q-graph">
-      <caption>Last 5 Year Rape Statistics In India </caption>
+     <caption>Last 5 Year Rape Statistics In India 
+        <p>Black-Number of cases registered</p>
+        <p id="blue">Blue-Number of cases solved</p>
+      </caption>
       <thead>
 
       </thead>
@@ -392,10 +401,10 @@
   
 
 
-  </div>
+  {{!-- </div>
    <div class="container-news">
         <marquee behavior="scroll" direction="left">headlines... </marquee>
-    </div>
+    </div> --}}
   
   <footer class="footer">
         <p class="footer__title">CONTACT US</p>
