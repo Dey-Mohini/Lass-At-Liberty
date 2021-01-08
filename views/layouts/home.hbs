@@ -42,7 +42,7 @@
     }
 
     #navbar a img {
-      width: 1.75%;
+      width: 1.5%;
       position: absolute;
       padding-left: 5px;
     }
@@ -110,13 +110,16 @@
 
     #q-graph caption {
       caption-side: top;
-      width: 400px;
+      width: 350px;
       text-transform: uppercase;
-      letter-spacing: .5px;
-      top: -90px;
+      letter-spacing: .3px;
+      top: -160px;
       position: relative;
       z-index: 10;
       font-weight: bolder;
+      border: solid 3px black;
+     font-size: larger;
+
     }
 
     #q-graph tr,
@@ -208,7 +211,6 @@
     #q-graph .bar p {
       margin: 5px 0 0;
       padding: 0;
-      opacity: .4;
     }
 
     #q-graph .sent {
@@ -277,6 +279,7 @@
     padding: 0px;
     font-weight: var(--font-semi);
     border: 5px solid #0d0e0d;
+    margin-top: 30px;
 }
 .footer__title{
   font-size: 2rem;
@@ -351,12 +354,12 @@
     </div>
   </div>
     <table id="q-graph">
-     <caption>Last 5 Year Rape Statistics In India 
+     
+      <thead>
+        <caption>Last 5 Year Rape Statistics In India 
         <p>Black-Number of cases registered</p>
         <p id="blue">Blue-Number of cases solved</p>
       </caption>
-      <thead>
-
       </thead>
       <tbody>
         <tr class="qtr" id="q1">
@@ -422,7 +425,8 @@
             </a>
           </div>
         </div>
-        <p>&#169; 2021</p>
+        <p><strong style="color: blue;">Get in touch with us:</strong><br>9668709319, 9861664662</p>
+        <p>&#169; 2021| All rights reserved</p>
       </footer>
       <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script type="text/javascript" >
